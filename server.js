@@ -45,6 +45,6 @@ io.on("connection", (socket) => {
 });
 
 //server is our local host
-server.listen(3030);
+server.listen(process.env.PORT || 3030);
 
 //why are we using uuid --> generate random id
